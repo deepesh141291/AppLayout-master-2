@@ -1,0 +1,51 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="General"
+        android:key="sync_category">
+
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/radius_array"
+            android:entryValues="@array/radius_array"
+            android:key="Radius"
+            android:summary="Distance that before reaching Destination Alarm Starts"
+            android:title="Radius" />
+        <ListPreference
+            android:key="mode"
+            android:title="Mode_of_Travel"
+            android:summary="Define how you are Travelling"
+            android:defaultValue="driving"
+            android:entries="@array/updateInterval"
+            android:entryValues="@array/updateIntervalValues"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="SMS setting"
+        android:key="personal_category">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="sms"
+            android:title="Turn on/off SMS" />
+        <Preference android:key="cname" android:defaultValue="DEEPESH" android:title="Contact_Name" android:summary="click on Turn on Switch to set contact name"></Preference>
+        <Preference android:key="cnumber" android:defaultValue="1234" android:title="Contact_Number" android:summary="click on Turn on Switch to set contact number"></Preference>
+        <EditTextPreference
+            android:key="sms_text"
+            android:title="SMS Text"
+            android:summary="Enter SMS Text to notify contact that you are reaching Destination"
+            android:dialogTitle="SMS Text"
+            android:dialogMessage="Enter SMS Text"
+            android:defaultValue="I am going to reach"
+            android:inputType="textEmailAddress"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Wakeup Call"
+        android:key="personal_category">
+        <Preference android:key="Tutorial" android:title="Tutorial"></Preference>
+        <Preference android:key="Share" android:title="Share Wake up call"></Preference>
+        <Preference android:key="Privacy" android:title="Privacy policy"></Preference>
+        <Preference android:key="Version" android:title="Version 1.1.0" android:summary="&#169; 2017 Wake up call"></Preference>
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="updateInterval">
+        <item name="1">Driving</item>
+        <item name="2">Rail</item>
+        <item name="3">Bus</item>
+    </string-array>
+
+    <string-array name="updateIntervalValues">
+        <item name="1">driving</item>
+        <item name="2">train</item>
+        <item name="3">bus</item>
+    </string-array>
+</resources>

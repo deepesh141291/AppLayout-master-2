@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="6sp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="Privacy Policy"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:textColor="@android:color/black"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="6sp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="What information do we collect?"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="6sp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:text="We do not collect any privacy information from our users unless the users do explicitly agree to share such information with us. Currently we do only collect information from users when they send debug reports.\n "
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="6sp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:text="Sending of a debug report requires user action and users may review any information prior sending and decide whether they want to disclose it with us or not.
+The debug reports contain the user's email address, his locale, version and name of the used software, device firmware version and a portion of the device log."
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="6sp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="What do we use your information for?"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="6sp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:text="The information provided in the debug reports is not used for any other purpose than resolving the reported problems and proving a better functionality and services to out users.\n "
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="6sp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="Do we disclose any information to outside parties?"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="6sp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:text="We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information. We may also release your information when we believe release is appropriate to comply with the law, enforce our site policies, or protect ours or others rights, property, or safety. However, non-personally identifiable visitor information may be provided to other parties for marketing, advertising, or other uses.\n "
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

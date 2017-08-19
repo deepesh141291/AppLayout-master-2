@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distance in KM"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/planets_spinner"
+        android:layout_marginLeft="@dimen/cast_libraries_material_featurehighlight_center_horizontal_offset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/radius_array"
+        android:prompt="@string/radius_prompt"/>
+
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:baselineAligned="false"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mode of Travelling"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"/>
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/rg"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/radio_driving"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/driving"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_rail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rail"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_bus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bus"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/Gray_LightGray" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Radius in KM"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/planets_spinner"
+            android:layout_marginLeft="@dimen/cast_libraries_material_featurehighlight_center_horizontal_offset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/radius_array"
+            android:spinnerMode="dialog"
+            android:prompt="@string/radius_prompt"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/Gray_LightGray" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:text="Turn On/Off SMS"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textStyle="bold"
+            android:textSize="18dp" />
+
+        <TextView
+            android:text="Selected Contact Name Display Here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/textView2"
+            android:gravity="center"
+            android:textColor="#000000"/>
+        <TextView
+            android:text="Selected Contact Number Display Here "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/cont"
+            android:gravity="center"
+            android:textColor="#000000"/>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Select Contact"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textStyle="bold">
+
+        </android.support.v7.widget.AppCompatButton>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set SMS text"
+            android:id="@+id/sms_txt"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"/>
+
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:id="@+id/custom_txt"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:hint="Set Text to be sent"
+            android:layout_marginTop="10dp"
+            android:maxLines="5" />
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Set text"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textStyle="bold">
+
+    </android.support.v7.widget.AppCompatButton>
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
