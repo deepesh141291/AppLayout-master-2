@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.abhay.applayout">
+    package="deepesh.travel.abhay.applayout">
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
@@ -16,7 +16,7 @@
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
-        android:name=".saved_data_elements"
+        android:name="deepesh.travel.abhay.applayout.saved_data_elements"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -27,7 +27,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDNVWdbxYpqG08j-wytsWb5cwrBM0mN1ro" />
 
-        <activity android:name=".WelcomeActivity">
+        <activity android:name="deepesh.travel.abhay.applayout.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -35,86 +35,86 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="deepesh.travel.abhay.applayout.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".SetDestinationActivity"
+            android:name="deepesh.travel.abhay.applayout.SetDestinationActivity"
             android:label="@string/title_activity_set_destination"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="deepesh.travel.abhay.applayout.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.abhay.applayout.MainActivity" />
+                android:value="com.example.abhay.applayout.deepesh.example.abhay.applayout.MainActivity" />
         </activity>
         <activity
-            android:name=".SetCustomText"
+            android:name="deepesh.travel.abhay.applayout.SetCustomText"
             android:label="Set Text"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="deepesh.travel.abhay.applayout.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.abhay.applayout.MainActivity" />
+                android:value="com.example.abhay.applayout.deepesh.example.abhay.applayout.MainActivity" />
         </activity>
         <activity
-            android:name=".SetRadiusActivity"
+            android:name="deepesh.travel.abhay.applayout.SetRadiusActivity"
             android:label="Set Radius"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="deepesh.travel.abhay.applayout.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.abhay.applayout.MainActivity" />
+                android:value="com.example.abhay.applayout.deepesh.example.abhay.applayout.MainActivity" />
         </activity>
         <activity
-            android:name=".SetContact"
+            android:name="deepesh.travel.abhay.applayout.SetContact"
             android:label="Set Contact"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="deepesh.travel.abhay.applayout.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.abhay.applayout.MainActivity" />
+                android:value="com.example.abhay.applayout.deepesh.example.abhay.applayout.MainActivity" />
         </activity>
         <activity
-            android:name=".SetModeofTravel"
+            android:name="deepesh.travel.abhay.applayout.SetModeofTravel"
             android:label="Set Mode of Travel"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="deepesh.travel.abhay.applayout.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.abhay.applayout.MainActivity" />
+                android:value="com.example.abhay.applayout.deepesh.example.abhay.applayout.MainActivity" />
         </activity>
         <activity
-            android:name=".Setting"
+            android:name="deepesh.travel.abhay.applayout.Setting"
             android:label="Settings"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="deepesh.travel.abhay.applayout.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.abhay.applayout.MainActivity" />
+                android:value="com.example.abhay.applayout.deepesh.example.abhay.applayout.MainActivity" />
         </activity>
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@android:style/Theme.Translucent" />
         <activity
-            android:name=".SettingTest"
+            android:name="deepesh.travel.abhay.applayout.SettingTest"
             android:label="@string/title_activity_settings"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="deepesh.travel.abhay.applayout.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.abhay.applayout.MainActivity" />
+                android:value="com.example.abhay.applayout.deepesh.example.abhay.applayout.MainActivity" />
         </activity>
         <activity
-            android:name=".Tutorial"
+            android:name="deepesh.travel.abhay.applayout.Tutorial"
             android:label="@string/tutorial"
-            android:parentActivityName=".SettingTest">
+            android:parentActivityName="deepesh.travel.abhay.applayout.SettingTest">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.abhay.applayout.MainActivity" />
+                android:value="com.example.abhay.applayout.deepesh.example.abhay.applayout.MainActivity" />
         </activity>
         <activity
-            android:name=".privacyPolicy"
+            android:name="deepesh.travel.abhay.applayout.privacyPolicy"
             android:label="@string/privacy"
-            android:parentActivityName=".SettingTest">
+            android:parentActivityName="deepesh.travel.abhay.applayout.SettingTest">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.abhay.applayout.MainActivity" />
+                android:value="com.example.abhay.applayout.deepesh.example.abhay.applayout.MainActivity" />
         </activity>
-        <receiver android:name=".AlarmReceiver" />
+        <receiver android:name="deepesh.travel.abhay.applayout.AlarmReceiver" />
     </application>
 
 </manifest>
