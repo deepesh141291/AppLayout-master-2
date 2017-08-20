@@ -5,9 +5,9 @@ android {
     buildToolsVersion "25.0.0"
     defaultConfig {
         applicationId "deepesh.travel.abhay.applayout"
-        minSdkVersion 21
-        targetSdkVersion 25
-        versionCode 1
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 4
         versionName "1.0"
         multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
