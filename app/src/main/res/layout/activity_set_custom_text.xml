@@ -9,7 +9,7 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="20dp"
-        tools:context="com.example.abhay.applayout.deepesh.example.abhay.applayout.SetCustomText"
+        tools:context="deepesh.travel.abhay.applayout.MainActivity"
         android:weightSum="1">
 
         <android.support.design.widget.TextInputLayout
