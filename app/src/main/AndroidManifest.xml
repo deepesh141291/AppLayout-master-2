@@ -30,7 +30,8 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDNVWdbxYpqG08j-wytsWb5cwrBM0mN1ro" />
 
-        <activity android:name="deepesh.travel.abhay.applayout.WelcomeActivity">
+        <activity android:name="deepesh.travel.abhay.applayout.WelcomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
