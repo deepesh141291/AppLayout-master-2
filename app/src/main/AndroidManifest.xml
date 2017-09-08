@@ -3,7 +3,6 @@
     package="deepesh.travel.abhay.applayout" android:versionCode="5" xmlns:tools="http://schemas.android.com/tools">
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
-    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="23" />
     <uses-feature android:name="android.hardware.sensor.compass"
         android:required="false" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
