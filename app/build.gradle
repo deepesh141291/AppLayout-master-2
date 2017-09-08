@@ -7,7 +7,7 @@ android {
         applicationId "deepesh.travel.abhay.applayout"
         minSdkVersion 14
         targetSdkVersion 26
-        versionCode 16
+        versionCode 17
         versionName "1.0"
         multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -46,11 +46,11 @@ dependencies {
     compile "com.android.support:appcompat-v7:26.+"
     compile "com.android.support:cardview-v7:26.+"
     compile 'com.android.support:design:26.+'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.almworks.sqlite4java:sqlite4java-win32-x64:1.0.392'
+    compile 'com.android.support.constraint:constraint-layout:1.+'
+    compile 'com.almworks.sqlite4java:sqlite4java-win32-x64:1.+'
     compile 'com.android.support:preference-v7:26.+'
     compile 'com.google.android.gms:play-services:10.2.1'
-    compile 'org.apache.directory.studio:org.apache.commons.io:2.4'
+    compile 'commons-io:commons-io:2.4'
     compile 'com.google.android.gms:play-services-ads:10.2.1'
 
     compile 'com.google.android.gms:play-services:8.4.0'
