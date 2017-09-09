@@ -189,7 +189,7 @@
                     android:id="@+id/imageView10"
                     android:layout_width="100dp"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="100dp"
+                    android:layout_marginLeft="94dp"
                     app:srcCompat="@drawable/message" />
             </LinearLayout>
 

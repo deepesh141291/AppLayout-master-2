@@ -7,7 +7,7 @@ android {
         applicationId "deepesh.travel.abhay.applayout"
         minSdkVersion 14
         targetSdkVersion 26
-        versionCode 17
+        versionCode 21
         versionName "1.0"
         multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"

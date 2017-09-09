@@ -48,8 +48,7 @@ public class WelcomeActivity extends AppCompatActivity {
         if (Build.VERSION.SDK_INT >= 21) {
             getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
         }
-        //Remove title bar
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        //Remove title ba
 
 //Remove notification bar
         //this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);

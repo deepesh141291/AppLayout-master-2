@@ -57,6 +57,7 @@
         <activity
             android:name="deepesh.travel.abhay.applayout.Tutorial"
             android:label="@string/tutorial"
+            android:theme="@style/AppTheme.NoActionBar"
             android:parentActivityName="deepesh.travel.abhay.applayout.SettingTest">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
