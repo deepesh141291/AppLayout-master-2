@@ -39,6 +39,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -104,6 +105,7 @@ public class MainActivity extends AppCompatActivity
     String dis1 = "";
     ImageView mode;
     View myview;
+    ProgressBar mProgress;
 
     private AdView mAdView;
 
@@ -146,14 +148,14 @@ public class MainActivity extends AppCompatActivity
             case "bus":
                 {
                     // Pirates are the best
-                    dc.addMODE(new saved_MODE("mode=transit&transit_mode=bus&key=AIzaSyDnMgSPYJXXYVncGgqtH8YuEF-7rA8JiF4"));
+                    dc.addMODE(new saved_MODE("mode=transit&transit_mode=bus&key=AIzaSyASqE50Ap-zcLrCDljRzfk2RnyM9d1nBAQ"));
                     System.out.println(dc.showMODE().getMODE());
                     break;
                 }
             case "train":
                 {
                     // Ninjas rule
-                    dc.addMODE(new saved_MODE("mode=transit&transit_mode=train&key=AIzaSyDnMgSPYJXXYVncGgqtH8YuEF-7rA8JiF4"));
+                    dc.addMODE(new saved_MODE("mode=transit&transit_mode=train&key=AIzaSyASqE50Ap-zcLrCDljRzfk2RnyM9d1nBAQ"));
                     System.out.println(dc.showMODE().getMODE());
                     break;
                 }
@@ -203,7 +205,7 @@ public class MainActivity extends AppCompatActivity
 
         // Go to app_bar view and build AdView
         View test1View = this.findViewById(R.id.app_bar);
-        AdView adView =((AdView) test1View.findViewById(R.id.adView));
+        AdView adView =((AdView) findViewById(R.id.adView));
         AdRequest adRequest = new AdRequest.Builder()
                 .build();
         adView.loadAd(adRequest);
@@ -268,6 +270,12 @@ public class MainActivity extends AppCompatActivity
                     double d1 = Double.parseDouble(((dc.showDistance().getDist())))-Double.parseDouble(dc.showRADIUS().getRadius());
                     System.out.println(d1);
                     remaining.setText(Double.toString(d1)+" Km"+"\nRem Dist");
+                    double d3 = Double.parseDouble(dc.showDistance().getDist());
+                    double d4 = d1/d3;
+                    d4 = d4*100;
+                    int prog = (int) d4;
+                    mProgress.setProgress(prog);
+                    ((TextView) findViewById(R.id.textView1)).setText("   "+Integer.toString(prog)+"%"+"\n Remaining");
 
                     // if go equals 'c' then only it will call
                     // isNetworkAvailable() this shows when Internet available then it call
@@ -328,6 +336,13 @@ public class MainActivity extends AppCompatActivity
                             // Set Remaining distance
                             System.out.println("rem dist set Alarm");
                             remaining.setText(String.valueOf(dv) + " km \nRem Distance");
+                            d3 = Double.parseDouble(dc.showDistance().getDist());
+                            d4 = dv/d3;
+                            d4 = d4*100;
+                            prog = (int) d4;
+                            mProgress.setProgress(prog);
+                            ((TextView) findViewById(R.id.textView1)).setText("   "+Integer.toString(prog)+"%"+"\n Remaining");
+
 
                             // If distance in meter then l should be 0 and Alarm should start
                             if (sp[1].contentEquals("m")) {
@@ -343,6 +358,7 @@ public class MainActivity extends AppCompatActivity
                             if (l <= limit && rep.contentEquals("c")) {
                                 dist.setText(s);
                                 remaining.setText(String.valueOf(dv) + " km \nRem Distance");
+
                                 System.out.println("distText"+dist.getText());
                                 set_alarm();
                                 System.out.println("set alarm"+ dc.showDetails().getDest());
@@ -403,6 +419,12 @@ public class MainActivity extends AppCompatActivity
                             System.out.println("round"+dv);
                             //double round = round(r);
                             remaining.setText(String.valueOf(dv) + " km \nRem Distance");
+                            d3 = Double.parseDouble(dc.showDistance().getDist());
+                            d4 = dv/d3;
+                            d4 = d4*100;
+                            prog = (int) d4;
+                            mProgress.setProgress(prog);
+                            ((TextView) findViewById(R.id.textView1)).setText("   "+Integer.toString(prog)+"%"+"\n Remaining");
                             String rep = dc.showDetails().getDest().substring(dc.showDetails().getDest().length() - 1, dc.showDetails().getDest().length());
                             double limit = 1.0;
                             System.out.println(Double.valueOf(dc.showRADIUS().getRadius()));
@@ -521,6 +543,19 @@ public class MainActivity extends AppCompatActivity
         // Register a listener to receive callbacks when a place has been selected or an error has
         // occurred.
         autocompleteFragment.setOnPlaceSelectedListener(MainActivity.this);
+        ImageView img = (ImageView) findViewById(R.id.imageView10);
+        img.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // your code here
+                Toast.makeText(MainActivity.this, "Go to Setting for disable", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        mProgress = (ProgressBar) findViewById(R.id.circularProgressbar);
+        mProgress.setProgress(0);
+
+// as 60 is max, we specified in the xml layout, 30 will be its half ?
+
 
 
     }

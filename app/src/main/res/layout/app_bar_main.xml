@@ -27,15 +27,7 @@
         <include
             android:id="@+id/include"
             layout="@layout/content_main" />
-        <com.google.android.gms.ads.AdView
-            xmlns:ads="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/adView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            ads:adSize="SMART_BANNER"
-            ads:adUnitId="@string/banner_home_footer">
-        </com.google.android.gms.ads.AdView>
+
 
 
 </android.support.design.widget.CoordinatorLayout>

@@ -97,6 +97,7 @@
 
             </LinearLayout>
 
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -126,6 +127,7 @@
                     android:gravity="center"
                     android:text="Radius\nRadius" />
 
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="fill_parent"
@@ -140,8 +142,65 @@
                     android:gravity="center"
                     android:text="Calculating\nRem Distance" />
 
-            </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#CD96CD"
+                        android:text="Radius" />
+                    <Spinner
+                        android:id="@+id/planets_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/radius_array"
+                        android:layout_weight="1"
+                        android:background="#CD96CD"
+                        android:prompt="@string/radius_prompt"/>
+                </LinearLayout>
 
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/sms_status1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"  >
+
+                    <ProgressBar
+                        android:id="@+id/circularProgressbar"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_centerInParent="true"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:indeterminate="false"
+                        android:progress="0"
+                        android:max="100"
+                        android:secondaryProgress="100"
+                        android:progressDrawable="@drawable/progressbar" />
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="progress" />
+                </RelativeLayout>
+            </LinearLayout>
             <LinearLayout
                 android:id="@+id/alarm_status"
                 android:layout_width="fill_parent"
@@ -188,12 +247,22 @@
                 <ImageView
                     android:id="@+id/imageView10"
                     android:layout_width="100dp"
-                    android:layout_height="50dp"
+                    android:layout_height="match_parent"
                     android:layout_marginLeft="94dp"
                     app:srcCompat="@drawable/message" />
             </LinearLayout>
 
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="@string/banner_home_footer">
+            </com.google.android.gms.ads.AdView>
         </LinearLayout>
+
 
 
     </ScrollView>

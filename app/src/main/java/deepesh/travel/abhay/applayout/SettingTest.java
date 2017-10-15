@@ -198,7 +198,6 @@ public class SettingTest extends AppCompatPreferenceActivity {
             setHasOptionsMenu(true);
             //startContact();
             System.out.println("start genreal"+j);
-
             Preference cname1 = (Preference) findPreference("cname");
             Preference cnumber1 = (Preference) findPreference("cnumber");
             cname1.setDefaultValue("click on Turn on Switch to set contact name");
@@ -215,7 +214,7 @@ public class SettingTest extends AppCompatPreferenceActivity {
                 }
 
             });
-
+            // Open Privacy policy class when click on privacy policy
             final Preference Privacy = (Preference) findPreference("Privacy");
             Privacy.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
                 public boolean onPreferenceClick(Preference preference) {
@@ -234,7 +233,7 @@ public class SettingTest extends AppCompatPreferenceActivity {
                         i.setType("text/plain");
                         i.putExtra(Intent.EXTRA_SUBJECT, "My application name");
                         String sAux = "\nLet me recommend you this application\n\n";
-                        sAux = sAux + "https://play.google.com/store/apps/details?id=Orion.Soft \n\n";
+                        sAux = sAux + "https://play.google.com/store/apps/details?id=deepesh.travel.abhay.applayout \n\n";
                         i.putExtra(Intent.EXTRA_TEXT, sAux);
                         startActivity(Intent.createChooser(i, "choose one"));
                     } catch(Exception e) {
